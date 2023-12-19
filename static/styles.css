@@ -42,3 +42,24 @@
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+.gridContainer{
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-rows: 100px 100px 100px;
+    gap: 1rem;
+}
+.gridContent{
+    background-color: #47bcd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gridContent1{
+    background-color: #47bcd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/span 2;
+    grid-column: 1/span 3;
+}
