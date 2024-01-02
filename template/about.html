@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="topHeading" class="headingName Classno2 classsno3"> InDiLearn </h1>
+    <h1 class="headingName"> Hello </h1>
+    <h2 id="JJ2"> Hello World </h2>
+    <button id="button"> Bigger  </button>
+    <button id="discoButton" ondblclick="fn()"> Fun </button>
+    
+    <script>
+       document.getElementById("JJ2").style.color = "#ffffff"
+       console.log(document.querySelector("#topHeading").classList)
+       document.querySelector("#button").addEventListener('click', () => {
+        document.body.style.backgroundColor = "blue"
+       })
+       document.querySelector("body").addEventListener('keydown', (event) => {
+        document.body.style.backgroundColor = "green"
+        var isCtrl = event.ctrlKey
+        var isZ = event.key === "z" || event.key === "Z"
+        if (isCtrl && isZ){
+            event.preventDefault()
+            document.getElementById("topHeading").innerHTML = "Nhi Karunga Undo"
+        }
+       })
+       
+    </script>
+</body>
+</html>
