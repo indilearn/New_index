@@ -12,22 +12,17 @@
     <button id="button"> Bigger  </button>
     <button id="discoButton" ondblclick="fn()"> Fun </button>
     
-    <script>
-       document.getElementById("JJ2").style.color = "#ffffff"
-       console.log(document.querySelector("#topHeading").classList)
-       document.querySelector("#button").addEventListener('click', () => {
-        document.body.style.backgroundColor = "blue"
-       })
-       document.querySelector("body").addEventListener('keydown', (event) => {
-        document.body.style.backgroundColor = "green"
-        var isCtrl = event.ctrlKey
-        var isZ = event.key === "z" || event.key === "Z"
-        if (isCtrl && isZ){
-            event.preventDefault()
-            document.getElementById("topHeading").innerHTML = "Nhi Karunga Undo"
-        }
-       })
-       
-    </script>
+
+    <a 
+    href="index.html" 
+    id="anchorTag" 
+    class="Anchor-class"  
+    > This is the link to other page </a>
+    
+    
+    
+    <input type="text" placeholder="" id="input" name="">
+
+    <script src="index.js"></script>
 </body>
 </html>
